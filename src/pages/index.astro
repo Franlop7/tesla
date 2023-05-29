@@ -5,7 +5,7 @@ import Layout from "../layouts/Layout.astro";
 <Layout>
   <main>
     <header
-      class="py-4 px-10 flex items-center fixed top-0 w-full justify-between z-40 text-white"
+      class="py-3 px-10 flex items-center fixed top-0 w-full justify-between z-40 text-white"
     >
       <div class="flex flex-grow basis-0">
         <svg
@@ -46,7 +46,34 @@ import Layout from "../layouts/Layout.astro";
     <section
       class="bg-black h-screen w-screen text-center relative overflow-hidden"
     >
-      Hola mundo
+      <div class="z-30 relative h-full flex flex-col">
+        <header>
+          <h2 class="text-white pt-40 text-[40px] font-medium">
+            Disfrute de Tesla
+          </h2>
+          <p class="text-white text-sm">
+            Programe una prueba de coducción hoy mismo
+          </p>
+        </header>
+
+        <footer class="flex flex-col flex-grow justify-end pb-20">
+          <div>
+            <a
+              class="text-white text-sm font-medium border-[3px] border-white rounded px-14 py-2 inline-block hover:bg-white hover:text-black transition-colors"
+              href="#">Prueba de coducción</a
+            >
+          </div>
+        </footer>
+      </div>
+
+      <div class="absolute top-0 bottom-0 w-full z-10">
+        <video
+          class="object-center object-cover h-full w-full"
+          autoplay
+          muted
+          loop
+          src="/Homepage.webm"></video>
+      </div>
     </section>
   </main>
 </Layout>
