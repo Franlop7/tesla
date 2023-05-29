@@ -1,5 +1,8 @@
 ---
-const { title = "Tesla", description = "Landing pages de tesla" } = Astro.props;
+const {
+  title = "Coches eléctricos, energía solar y limpia | Tesla España",
+  description = "Tesla está acelerando la transición del mundo hacia la energía sostenible con coches eléctricos y con soluciones de energía solar y renovable integradas para hogares y negocios.",
+} = Astro.props;
 ---
 
 <!DOCTYPE html>
@@ -7,7 +10,7 @@ const { title = "Tesla", description = "Landing pages de tesla" } = Astro.props;
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="icon" type="image/svg+xml" href="/teslafavicon.png" />
     <meta name="generator" content={Astro.generator} />
     <meta name="description" content={description} />
     <meta property="og:site_name" content={description} />
