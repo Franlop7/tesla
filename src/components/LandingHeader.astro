@@ -10,9 +10,9 @@ import Logo from "./Logo.astro";
     <Logo />
   </div>
 
-  <nav>
+  <nav class="hidden xl:block sm:hidden">
     <ul
-      class="flex text-sm [&>li>a]:font-medium [&>li>a]:inline-block [&>li>a]:py-2 [&>li>a]:px-4"
+      class="flex text-sm [&>li>a]:transition-colors [&>li>a]:duration-500 [&>li>a]:text-current [&>li>a]:font-medium [&>li>a]:inline-block [&>li>a]:py-2 [&>li>a]:px-4"
     >
       <li><a href="#">Model S</a></li>
       <li><a href="#">Model 3</a></li>
@@ -25,11 +25,11 @@ import Logo from "./Logo.astro";
 
   <nav class="flex flex-grow basis-0 justify-end">
     <ul
-      class="flex text-sm [&>li>a]:font-medium [&>li>a]:inline-block [&>li>a]:py-2 [&>li>a]:px-4"
+      class="flex text-sm [&>li>a]:transition-colors [&>li>a]:duration-500 [&>li>a]:text-current [&>li>a]:font-medium [&>li>a]:inline-block [&>li>a]:py-2 [&>li>a]:px-4"
     >
-      <li><a href="#">Soporte</a></li>
-      <li><a href="#">Tienda</a></li>
-      <li><a href="#">Cuenta</a></li>
+      <li class="hidden xl:block sm:hidden"><a href="#">Soporte</a></li>
+      <li class="hidden xl:block sm:hidden"><a href="#">Tienda</a></li>
+      <li class="hidden xl:block sm:hidden"><a href="#">Cuenta</a></li>
       <li><a href="#">Menú</a></li>
     </ul>
   </nav>
